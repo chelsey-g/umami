@@ -1,14 +1,16 @@
 'use client';
+
 import { Icon, Text } from 'react-basics';
-import Link from 'next/link';
-import classNames from 'classnames';
+import { useMessages, useNavigation, useTeamUrl } from 'components/hooks';
+
 import HamburgerButton from 'components/common/HamburgerButton';
-import ThemeButton from 'components/input/ThemeButton';
+import Icons from 'components/icons';
 import LanguageButton from 'components/input/LanguageButton';
+import Link from 'next/link';
 import ProfileButton from 'components/input/ProfileButton';
 import TeamsButton from 'components/input/TeamsButton';
-import Icons from 'components/icons';
-import { useMessages, useNavigation, useTeamUrl } from 'components/hooks';
+import ThemeButton from 'components/input/ThemeButton';
+import classNames from 'classnames';
 import styles from './NavBar.module.css';
 
 export function NavBar() {
@@ -84,7 +86,7 @@ export function NavBar() {
         <Icon size="lg">
           <Icons.Logo />
         </Icon>
-        <Text>umami</Text>
+        <Text>poop</Text>
       </div>
       <div className={styles.links}>
         {links.map(({ url, label }) => {
